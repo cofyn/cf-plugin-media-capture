@@ -212,7 +212,6 @@
 
 - (void)captureVideo:(CDVInvokedUrlCommand*)command
 {
-    NSLog(@"info in captureVideo");
     NSString* callbackId = command.callbackId;
     NSDictionary* options = [command argumentAtIndex:0];
 
@@ -271,7 +270,7 @@
         // CDVImagePicker specific property
         pickerController.callbackId = callbackId;
 
-        [self.viewController presentViewController:pickerController animated:YES completion:nil];
+        //[self.viewController presentViewController:pickerController animated:YES completion:nil];
     }
 }
 

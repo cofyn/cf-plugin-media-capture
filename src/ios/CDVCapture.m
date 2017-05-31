@@ -665,7 +665,6 @@
     [tmp addSubview:self.timerLabel];
 
     // Add record button
-/*
     self.recordImage = [UIImage imageNamed:[self resolveImageResource:@"CDVCapture.bundle/record_button"] inBundle:cdvBundle compatibleWithTraitCollection:nil];
     self.stopRecordImage = [UIImage imageNamed:[self resolveImageResource:@"CDVCapture.bundle/stop_button"] inBundle:cdvBundle compatibleWithTraitCollection:nil];
     self.recordButton.accessibilityTraits |= [self accessibilityTraits];
@@ -674,7 +673,7 @@
     [self.recordButton setImage:recordImage forState:UIControlStateNormal];
     [self.recordButton addTarget:self action:@selector(processButton:) forControlEvents:UIControlEventTouchUpInside];
     [tmp addSubview:recordButton];
-*/
+
     // make and add done button to navigation bar
     self.doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissAudioView:)];
     [self.doneButton setStyle:UIBarButtonItemStyleDone];

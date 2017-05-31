@@ -270,7 +270,7 @@
         // CDVImagePicker specific property
         pickerController.callbackId = callbackId;
 
-        //[self.viewController presentViewController:pickerController animated:YES completion:nil];
+        [self.viewController presentViewController:pickerController animated:YES completion:nil];
     }
 }
 
